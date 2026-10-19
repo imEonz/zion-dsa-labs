@@ -47,6 +47,23 @@ public sealed class PlayerCollectionTests
         Player? player = collection.FindHighestScore();
 
         Assert.That(player, Is.Null);
+    }    
+    
+    [Test]
+    public void FindHighestScore_ReturnsFirstPlayerInListWhenScoresTie()
+    {
+        Player returnable = new Player(2, "Dingus", 67);
+        
+        PlayerCollection collection = new PlayerCollection(new[] 
+        { 
+            new Player(1, "Bingus", 50), 
+            returnable, 
+            new Player(3, "Linux", 67)
+        });
+
+        Player? player = collection.FindHighestScore();
+
+        Assert.AreSame(returnable, player);
     }
 
     [Test]
@@ -68,6 +85,8 @@ public sealed class PlayerCollectionTests
 
         Assert.That(contains, Is.False);
     }
+
+
 
     private static PlayerCollection CreateCollection()
     {
