@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = DSA.Lab01.Core
-build_property.ProjectDir = C:\Users\zion.falk\OneDrive - Academedia\Documents\GitHub\zion dsa labs\Lab-01-Search-Sort-Scaling-Starter\labs\01-search-sort-scaling\src\DSA.Lab01.Core\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 
